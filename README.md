@@ -6,7 +6,7 @@ The interior point method is a numerical optimisation method used for quadratic 
 
 The essential idea of this thesis is that when we start getting closer to the central path, we try and tackle the convergence issues, especially due to the lack of invertibililty of the system of equations as we get closer to a local solution.
 
-
+test
 
 Fatima Ginebra, 2025
 Advisor: Andreas Wachtel
