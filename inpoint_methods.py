@@ -23,6 +23,15 @@ def paso_intpoint(mu, wmu):
 
     alpha = min(alphas)
     return alpha
+
+def paso_intpointJ(mu, wmu):    
+    alphas = np.ones((len(wmu)))
+    for i in range(len(wmu)):
+        if wmu[i] < 0:
+            alphas[i] = -mu[i]/wmu[i]
+    alpha = min(alphas)
+    alfa = min(alpha, 1.0)        
+    return alfa
 #### Para cargar los matFiles ####
 
 def loadProblem( fname, useSparse = False ):
