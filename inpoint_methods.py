@@ -1,11 +1,16 @@
 import numpy as np
 import pandas as pd
 import copy as copy
+import scipy
 import scipy.io
 import time
 import os
 from scipy.linalg import solve, LinAlgWarning
 import warnings
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation, PillowWriter
+import openpyxl
+import xlsxwriter
 
 #### Determinar el tamaño del paso ####
 
