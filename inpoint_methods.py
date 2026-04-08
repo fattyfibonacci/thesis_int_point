@@ -50,7 +50,7 @@ def loadProblem( fname, useSparse = False ):
     #id = mat.get('Problem')[0,0][4]
     aux = mat.get('Problem')[0,0][5]
     c = aux[0,0][0].astype(float)[:,0]
-    print(' Norma infinita de b: ', np.linalg.norm(b, np.inf) )
+    print('Norma infinita de b: ', np.linalg.norm(b, np.inf) )
     
     return {'AE':A, 'bE':b, 'c':c}
 
