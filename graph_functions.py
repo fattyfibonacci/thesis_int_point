@@ -15,7 +15,7 @@ from matplotlib.animation import FuncAnimation, PillowWriter
 import openpyxl
 import xlsxwriter
 
-from inpoint_methods import paso_intpoint, loadProblem, intpoint, intpointR, highlight_greaterthan #,intpointR_mask
+from old_files.inpoint_methods import paso_intpoint, loadProblem, intpoint, intpointR, highlight_greaterthan #,intpointR_mask
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
