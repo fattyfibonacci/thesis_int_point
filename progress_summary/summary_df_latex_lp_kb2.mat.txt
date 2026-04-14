@@ -1,0 +1,15 @@
+% Summary table for LaTeX — Matrices: lp_kb2.mat
+
+\begin{tabular}{lrrr}
+\toprule
+Métrica & Después del IPM & Después del experimento & Mejoró? \\
+\midrule
+NaN & 8.4782e-06 & 1.2265e+01 & False \\
+NaN & 1.5374e-16 & 2.2551e-17 & True \\
+NaN & 1.3878e-17 & 1.4211e-14 & False \\
+NaN & 8.4782e-06 & 6.5792e-07 & True \\
+NaN & 3.6745e-06 & 1.2094e-07 & True \\
+NaN & 1.1061e+07 & 2.3264e+08 & False \\
+NaN & -2.0649e-02 & -2.0813e-02 & True \\
+\bottomrule
+\end{tabular}
