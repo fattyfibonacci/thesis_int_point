@@ -75,7 +75,7 @@ def paso_intpoint(mu, delta_mu):
     alpha = min(alphas)
     return alpha
 
-def solve_catch_error(K,ld):
+def solve_catch_error(K,ld,k):
     with warnings.catch_warnings(record=True) as warneo:
         warnings.simplefilter("always", LinAlgWarning)
         # Solve the linear system
@@ -85,7 +85,7 @@ def solve_catch_error(K,ld):
         if any(issubclass(warn.category, LinAlgWarning) for warn in warneo):
             # Print the warning message for all warnings captured
             for warn in warneo:
-                print(f"Warning: {warn.message}")
+                print(f"Warning: {warn.message} In iter {k}")
     return delta_vector
 
 def update_active_set_mask1(mu, z, Q, k, tau, active_set_history, mudf, mu_percentage_change, z_percentage_change, epsilon=1e-5, comp_tol=1e-5):
@@ -146,7 +146,7 @@ def update_active_set_mask( mu, z, Q, k, tau, active_set_history, mudf, mu_perce
                         f"z is not positive (z = {z[i]:.2e})"
                     )
                 
-                print(f"[Iteration {k}] Index {i} removed from active set:")
+                print(f"[Iteration {k}] Index {i} stopped meeting at least one criteria to be considered as zero:")
                 for reason in failed_conditions:
                     print(f"   - {reason}")
     
